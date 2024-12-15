@@ -139,6 +139,7 @@ m.matrix[j][i]=matrix1.matrix[i][j];
 }
 return m;
 }
+}
 // Event listener for future button click
 document.getElementById("future-button").addEventListener("click", function () {
 const year = document.getElementById("year-input").value;
@@ -290,9 +291,7 @@ function trainModelFor2025(iterations) {
         delta_weight = Matrix.transpose(d_weights);
         weight.matrix = Matrix.add(weight, delta_weight);
     }
-
     return r;
-}
 }
 let r2024=trainModel(iterations);
 let r2025=trainModelFor2025(iterations);
