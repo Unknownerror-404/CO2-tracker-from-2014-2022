@@ -241,5 +241,6 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Please select a state and a valid year to predict.");
 
             return;
-
         }
+    }
+    )});
